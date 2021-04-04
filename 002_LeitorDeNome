@@ -1,0 +1,2 @@
+nome = input('Digite seu nome:')
+print('Olá{}, bom te receber no nosso sistema de ajuda.'.format(nome))

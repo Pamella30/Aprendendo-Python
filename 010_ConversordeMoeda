@@ -1,0 +1,3 @@
+real = float(input('Quanto voce tem dinheiro em reais?R$ '))
+euro = real / 6.71
+print('Convertendo você terá {:.2f} euros.'.format(euro))

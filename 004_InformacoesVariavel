@@ -1,0 +1,11 @@
+qc = input('Digite qualquer coisa: ')
+print('O tipo primitivo da variavel é:', type(qc))
+print('Só tem espaços?', qc.isspace())
+print('É um numero?', qc.isnumeric())
+print('Esta capitalizada?', qc.istitle())
+print('É alfabetico', qc.isalpha())
+print('Esta em maiuscula?', qc.isupper())
+print('Esta em minuscula?', qc.islower())
+print('É alfanumerico?', qc.isalnum())
+
+

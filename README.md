@@ -1,2 +1,3 @@
 # Learning Python
- Exercicios 
+ Exercicios do Curso em Video
+

@@ -1,0 +1,4 @@
+numero = int(input('Digite um numero qualquer: '))
+soma = numero + 1
+sub = numero - 1
+print('Numero digitado: {} \nAntecessor: {} \nSucessor: {}'.format(numero,sub, soma))

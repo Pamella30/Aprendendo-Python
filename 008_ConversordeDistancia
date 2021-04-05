@@ -1,0 +1,4 @@
+km = float(input('Digite a kilometragem:'))
+m = km * 10
+c = km * 100
+print('Metros:{:.1f}\nCentimentros:{:.1f}'.format(m, c))

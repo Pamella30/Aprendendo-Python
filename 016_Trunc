@@ -1,0 +1,4 @@
+import math
+numero = float(input('Digite um numero real: '))
+nint = math.trunc(numero)
+print('A parte inteira do numero digitado é: {} '.format(nint))

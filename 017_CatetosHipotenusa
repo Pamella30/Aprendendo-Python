@@ -1,0 +1,5 @@
+from math import hypot
+catop = float(input('Cateto oposto: '))
+catad = float(input('Cateto adjacente: '))
+hip = hypot(catop, catad)
+print('Hipotenusa: {:.2f}'.format(hip))

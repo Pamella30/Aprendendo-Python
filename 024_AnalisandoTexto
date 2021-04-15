@@ -1,0 +1,3 @@
+cidade = input('Digite o nome da sua cidade: ').strip()
+print('Analisando se o nome da sua cidade começa com Santo')
+print(cidade[:5].upper() == 'SANTO')

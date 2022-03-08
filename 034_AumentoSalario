@@ -1,0 +1,6 @@
+salario = float(input('Digite o valor atual do salario: R$ '))
+if salario >= 1250:
+    novo = (salario * 0.10) + salario
+else:
+    novo = (salario * 0.15) + salario
+print('O salario atual de {:.0f} passa para {:.0f}'.format(salario, novo))

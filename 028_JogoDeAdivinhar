@@ -1,0 +1,14 @@
+import playsound
+from random import randint
+computador = randint(0, 5)
+from time import sleep
+print('Jogo da divinhacao entre 0 e 5')
+jogador = int(input('Em que numero eu pensei: '))
+print('Processando...')
+sleep(1)
+if jogador == computador:
+    print('Parabens, acertou!!! eu pensei no {} mesmo hehe'.format(computador))
+    playsound.playsound('malvada.mp3')
+else:
+    print('Eu ganhei, eu pensei no numero {} e nao no {} :)'.format(computador, jogador))
+

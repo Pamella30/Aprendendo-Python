@@ -1,0 +1,27 @@
+print('='*20)
+print('      CAFE NOLI')
+print('='*20)
+compra = float(input('Preco das compras: R$ '))
+print('''FORMAS DE PAGAMENTO
+[1] a vista dinheiro
+[2] a vista cartao
+[3] 2x no cartao
+[4] 3x ou mais no cartao''')
+opcao = int(input('Qual e a opcao: '))
+if opcao == 1:
+    total = compra - (compra * 0.10)
+    print('Com 10% de desconto ', end='')
+elif opcao == 2:
+    total = compra - (compra * 0.05)
+    print('Com 5% de desconto ', end='')
+elif opcao == 3:
+    total = compra
+    parcela = total / 2
+    print('Sem juros! \nValor de cada parcela RS {:.2f} \nValor total da '.format(parcela), end='')
+elif opcao == 4:
+    total = compra + (compra * 0.20)
+    parcelas = int(input('Numero de parcelas: '))
+    print('O valor de cada parcela sera R$ {:.2f} \nO valor da '.format(total / parcelas), end='')
+else:
+    print('OPCAO INVALIDA')
+print('sua compra de R$ {:.2f} vai ficar R$ {:.2f}'.format(compra, total))

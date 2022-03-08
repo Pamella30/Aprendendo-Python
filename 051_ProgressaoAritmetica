@@ -1,0 +1,9 @@
+print(25 * '=')
+print('10 TERMOS DE UMA PA')
+print(25 * '=')
+pt = int(input('Primeiro termo: '))
+razao = int(input('Razao: '))
+decimo = pt + (10 - 1) * razao
+for progressao in range(pt, decimo + razao, razao):
+    print('{} -> '.format(progressao), end='')
+print('Acabou')

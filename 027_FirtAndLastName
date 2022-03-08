@@ -1,4 +1,0 @@
-nome = input('Digite seu nome completo: ').upper().strip()
-divisao = (nome.split())
-print ('Seu primeiro nome é {}'.format(divisao[0]))
-print('Seu último nome é {}'.format(divisao[len(divisao) -1]))

@@ -1,0 +1,8 @@
+primeiro = int(input('Digite um numero: '))
+segundo = int(input('Digite outro numero: '))
+if primeiro > segundo:
+    print('MAIOR {}  MENOR {}'.format(primeiro, segundo))
+elif segundo > primeiro:
+    print('MAIOR {} MENOR {}'.format(segundo, primeiro))
+else:
+    print('Numeros iguais!')

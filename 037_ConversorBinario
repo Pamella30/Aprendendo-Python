@@ -1,0 +1,16 @@
+numero = int(input('Digite um numero inteiro: '))
+print('Escolha uma das bases para conversao: ')
+print('Digite [1] pra BINARIO ')
+print('Digite [2] pra OCTAL')
+print('Digite [3] pra HEXADECIMAL')
+escolhido = int(input('Sua opcao: '))
+if escolhido == 1:
+    print('{} convertido para BINARIO fica {}'.format(numero, bin(numero)[2:]))
+elif escolhido == 2:
+    print('{} convertido para OCTAL fica {}'.format(numero, oct(numero)[2:]))
+elif escolhido == 3:
+    print('{} convertido para HEXADECIMAL fica {}'.format(numero, hex(numero)[2:]))
+else:
+    print('OPCAO INVALIDA!')
+
+

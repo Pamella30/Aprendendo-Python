@@ -1,0 +1,29 @@
+print('=' * 30)
+print('ANALISE DE DADOS')
+print('=' * 30)
+maior = 0
+h = 0
+m = 0
+while True:
+    idade = int(input('Idade: '))
+    sexo = ' '
+    while sexo not in 'FM':
+        sexo = str(input('[F/M]: ')).strip().upper()[0]
+        print('-' * 30)
+    res = ' '
+    while res not in 'SN':
+        res = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
+        print('-' * 30)
+    if idade >= 18:
+        maior += 1
+    if sexo == 'M':
+        h += 1
+    if sexo == 'F' and idade < 20:
+        m += 1
+    if res == 'N':
+        break
+
+print('Programa encerrado!')
+print(f'{maior} pessoas com mais de 18 anos.')
+print(f'Total de homens cadastrados {h}')
+print(f'Total de {m} mulheres com menos de 20 anos')

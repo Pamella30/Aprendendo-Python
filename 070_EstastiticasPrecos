@@ -1,0 +1,26 @@
+print('=' * 30)
+print('LOJA SUPER BARATO')
+print('=' * 30)
+total = caro = menor = cont = 0
+barato = ' '
+
+while True:
+    produto = str(input('Nome do produto: '))
+    preco = float(input('R$: '))
+    cont += 1
+    total += preco
+    if preco > 1000:
+        caro += 1
+    if cont == 1 or preco < menor:
+        menor = preco
+        barato = produto
+        
+    res = ' '
+    while res not in 'SN':
+        res = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+        print('=' * 30)
+    if res == 'N':
+        break
+print(f'Total da compra R$ {total:.2f}')
+print(f'Temos {caro} produtos custando mais de 1.000 reais.')
+print(f'O produto mais barato: {barato} com o menor preco de R$ {menor}.')

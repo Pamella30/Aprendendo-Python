@@ -1,0 +1,32 @@
+from random import randint
+print('=-' * 20)
+print('VAMOS JOGAR PAR OU IMPAR')
+print('=-' * 20)
+v = 0
+while True:
+    jog = int(input('Diga um valor: '))
+    comp = randint(0, 10)
+    tot = jog + comp
+    esc = ' '
+    while esc not in 'PI':
+        esc = str(input('PAR ou IMPAR? [P/I]: ')).strip().upper()[0]
+    print(f'Voce jogou {jog} e o computador {comp}. Total de {tot}')
+    if esc == 'P':
+        if tot % 2 == 0:
+            print('Voce venceu!')
+            v += 1
+        else:
+            print('Voce perdeu!')
+            break
+    elif esc == 'I':
+        if tot % 2 == 1:
+            print('Voce venceu!')
+            v += 1
+        else:
+            print('Voce perdeu!')
+            break
+    print('Vamos jogar novamente...')
+print(f'Game over. Voce venceu {v} rodadas')
+
+
+

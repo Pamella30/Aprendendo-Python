@@ -1,0 +1,15 @@
+numeros = (int(input('Digite um numero: ')),
+           int(input('Digite mais um numero: ')),
+           int(input('Digite mais outro numero: ')),
+           int(input('Digite um ultimo numero: ')))
+print(f'Os numeros digitados foram {numeros}')
+print(f'O numero {numeros[1]} aparece na 2 posicao')
+print(f'O valor 9 apareceu {numeros.count(9)}x')
+if 5 in numeros:
+    print(f'O valor 5 apareceu na {numeros.index(5) +1} posicao')
+else:
+    print('O valor 5 nao aparece em nenhuma posicao.')
+print('Os valores pares foram', end=' ')
+for n in numeros:
+    if n % 2 == 0:
+        print(n, end=' ')

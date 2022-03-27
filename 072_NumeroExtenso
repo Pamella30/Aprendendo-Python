@@ -1,0 +1,23 @@
+cont = ('zero', 'um', 'dois', 'tres', 'quatro', 'cinco')
+while True:
+    while True:
+        n = int(input('Digite um numero entre 0 e 5: '))
+        if 0 <= n <= 5:
+            break
+        print('Tente novamente!', end=' ')
+    print(f'Voce digitou o numero {cont[n]}')
+    print('=' * 30)
+    while True:
+        res = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+    if res == 'N':
+        break
+print('Programa encerrado!')
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+from random import randint
+sorteio = (randint(1, 15), randint(1, 15), randint(1, 15), randint(1, 15), randint(1, 15))
+print(f'Os valores sorteados foram {sorteio}')
+print(f'Maior numero: {max(sorteio)}')
+print(f'Menor numero: {min(sorteio)}')

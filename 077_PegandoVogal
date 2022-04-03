@@ -1,0 +1,9 @@
+print('=' * 40)
+print(f'{"Pegando vogal de cada nome":^40}')
+print('=' * 40)
+nomes = ('Pamella', 'Marlene', 'Gildo', 'Patricia', 'Leonardo', 'Beatriz', 'Ana')
+for n in nomes:
+    print(f'\nNo nome {n} temos ', end=' ')
+    for letra in n:
+        if letra.lower() in 'aeiou':
+            print(letra, end=' ')

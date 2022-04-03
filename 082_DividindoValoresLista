@@ -1,0 +1,20 @@
+valores = []
+listpar = []
+listimpar = []
+while True:
+    n = int(input('Digite um valor: '))
+    valores.append(n)
+    if n % 2 == 0:
+        listpar.append(n)
+    else:
+        listimpar.append(n)
+    while True:
+        res = input('Quer continuar?[S/N] ').strip().upper()
+        if res in 'SN':
+            break
+    if res == 'N':
+        break
+print(f'A lista completa e {valores}')
+print(f'Numeros pares sao {listpar}')
+print(f'Numeros impares sao {listimpar}')
+print('Programa encerrado!')

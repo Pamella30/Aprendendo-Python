@@ -1,0 +1,15 @@
+e = str(input('Digite uma expressao qualquer com parenteses: '))
+pilha = []
+for sim in e:
+    if sim == '(':
+        pilha.append('(')
+    elif sim == ')':
+        if len(pilha) > 0:
+            pilha.pop()
+        else:
+            pilha.append(')')
+            break
+if len(pilha) == 0:
+    print('Sua expressao esta correta!')
+else:
+    print('Sua expressao esta errada!')

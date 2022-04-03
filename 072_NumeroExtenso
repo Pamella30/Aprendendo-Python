@@ -9,6 +9,9 @@ while True:
     print('=' * 30)
     while True:
         res = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+        print('=' * 30)
+        if res in 'SN':
+            break
     if res == 'N':
         break
 print('Programa encerrado!')

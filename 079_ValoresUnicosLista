@@ -1,0 +1,17 @@
+valores = list()
+while True:
+    n = int(input('Digite um valor: '))
+    if n not in valores:
+        valores.append(n)
+        print('Valor adicionado com sucesso...')
+        print('=' * 40)
+    else:
+        print('Valor duplicado! Nao adicionado...')
+    res = str(input('Quer continuar? ')).strip().upper()
+    if res in 'N':
+        break
+print(f'Voce adicionou os valores {valores}')
+print('Programa encerrado!')
+
+
+

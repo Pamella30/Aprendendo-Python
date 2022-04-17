@@ -1,0 +1,38 @@
+pes = list()
+cad = dict()
+soma = media = 0
+while True:
+    cad.clear()
+    cad['nome'] = str(input('Nome: ')).strip().upper()
+    while True:
+        cad['sex'] = str(input('Sexo: ')).strip().upper()[0]
+        if cad['sex'] in 'FM':
+            break
+        print('ERRO!Por favor digite somente F ou M: ')
+    cad['idade'] = int(input('Idade: '))
+    soma += cad['idade']
+    pes.append(cad.copy())
+    while True:
+        res = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
+        if res in 'SN':
+            break
+        print('ERRO!Por favor digite somente S ou N: ')
+    if res == 'N':
+        break
+print('=-' * 30)
+print(f' -> Ao todo foram {len(pes)} pessoas cadastradas.')
+media = soma / len(pes)
+print(f' -> A media de idade das pessoas cadastrada e {media:5.2f} anos.')
+print(f' -> As mulheres cadastradas foram ', end='')
+for p in pes:
+    if p['sex'] in 'Ff':
+        print(f'{p["nome"]}  ', end='')
+print()
+print(f' -> Lista das pessoas que estao acima da media ')
+for p in pes:
+    if p['idade'] >= media:
+        for k, v in p.items():
+            print(f'{k} = {v}')
+        print()
+print('>>> ENCERRADO <<<')
+

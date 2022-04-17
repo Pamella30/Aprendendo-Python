@@ -1,0 +1,17 @@
+from datetime import datetime
+trab = dict()
+trab['nome'] = input('Nome: ')
+nasc = int(input('Ano de nascimento: '))
+trab['idade'] = datetime.now().year - nasc
+trab['ct'] = int(input('Carteira de trabalho. (0 nao tem): '))
+while True:
+    if trab['ct'] == 0:
+        break
+    else:
+        trab['ano'] = int(input('Ano contratacao: '))
+        trab['sal'] = float(input('Salario: R$'))
+        trab['apos'] = trab['idade'] + ((trab['ano'] + 35) - datetime.now().year)
+    break
+print('=' * 35)
+for k, v in trab.items():
+    print(f' - {k} tem o valor {v}')

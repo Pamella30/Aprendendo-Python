@@ -1,0 +1,19 @@
+jog = dict()
+part = list()
+jog['nome'] = str(input('Nome do jogador: '))
+tot = int(input(f'Quantas partidas o {jog["nome"]} jogou: '))
+print('=' * 42)
+for p in range(0, tot):
+     part.append(int(input(f' - Quantos gols {jog["nome"]} fez na {p+1} partida: ')))
+jog['gols'] = part[:]
+jog['total'] = sum(part)
+print('=' * 42)
+print(jog)
+print('=' * 42)
+for k, v in jog.items():
+    print(f'O campo {k} tem o valor {v}.')
+print('=' * 42)
+print(f'O jogador {jog["nome"]} jogou {len(jog["gols"])} partidas e marcou {jog["total"]} gols.')
+print('=' * 42)
+for i, v, in enumerate(jog["gols"]):
+    print(f'   => Na partida {i+1} fez {v} gols.')

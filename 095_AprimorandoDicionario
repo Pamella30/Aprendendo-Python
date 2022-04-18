@@ -1,0 +1,45 @@
+time = list()
+jog = dict()
+part = list()
+while True:
+    jog.clear()
+    jog['nome'] = str(input('Nome do jogador: '))
+    tot = int(input(f'Quantas partidas o {jog["nome"]} jogou: '))
+    part.clear()
+    print('=' * 42)
+    for p in range(0, tot):
+         part.append(int(input(f' - Quantos gols {jog["nome"]} fez na {p+1} partida: ')))
+    jog['gols'] = part[:]
+    jog['total'] = sum(part)
+    time.append(jog.copy())
+    res = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
+    while True:
+        if res in 'SN':
+            break
+        print('Erro! Digite S ou N!')
+    if res in 'N':
+        break
+print('=' * 42)
+print('   cod ', end='')
+for i in jog.keys():
+    print(f'{i:<15}', end='')
+print()
+print('=' * 42)
+for k, v in enumerate(time):
+    print(f'{k+1:>5}  ', end='')
+    for d in v.values():
+        print(f'{str(d):<15}', end='')
+    print()
+print('=' * 42)
+while True:
+    busca = int(input('Mostrar dados de qual jogador? (999 parar)  '))
+    if busca == 999:
+        break
+    if busca >= len(time):
+        print('ERRO. Nao existe jogador com esse codigo.')
+    else:
+        print(f' -- Levantamento do jogador {time[busca]["nome"]}: ')
+        for i, g in enumerate(time[busca]['gols']):
+            print(f'  No jogo {i+1} fez {g} gols.')
+    print('='* 45)
+print('Programa encerrado')

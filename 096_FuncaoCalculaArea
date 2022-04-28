@@ -1,0 +1,11 @@
+def area(a, l):
+    ar = a * l
+    print('=' * 40)
+    print(f'{"Controle de terrenos":^40}')
+    print('=' * 40)
+    print(f'A area de um terreno {a}x{l} e de {ar}.')
+
+
+alt = float(input('Altura (m): '))
+lar = float(input('Largura (m): '))
+area(alt, lar)

@@ -1,0 +1,14 @@
+def fatorial(n):
+    """
+    Calcula o fatorial de um numero
+    :param n: numero a ser calculado
+    :return: retorna o fatorial
+    """
+    f = 1
+    for c in range(n, 0, -1):
+        f *= c
+    return f
+
+
+num = int(input('Deseja ver o fatorial de qual numero: '))
+print(fatorial(num))

@@ -1,0 +1,21 @@
+def voto(ano):
+    """
+    Calcula a idade e mostra se e obrigado a votar.
+    :param ano: ano em que a pessoa nasceu
+    :return: retorna a frase com a informacao de obrigado a votar ou nao.
+    """
+    print('-' * 30)
+    from datetime import date
+    atual = date.today().year
+    idade = atual - ano
+    if idade < 18:
+        return f'{idade} anos, ainda NAO vota!'
+    elif idade >= 18 or idade > 65:
+        return f'{idade} anos, voto OBRIGATORIO!'
+    else:
+        return f'{idade} anos, voto OPCIONAL!'
+
+
+a = int(input('Em que ano voce nasceu? '))
+print(voto(a))
+

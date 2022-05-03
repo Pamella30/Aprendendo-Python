@@ -1,0 +1,8 @@
+import moeda
+preco = float(input('Digite o preco do produto: R$ '))
+taxa = int(input('Qual a taxa de aumento: '))
+taxd = int(input('Qual a taxa de desconto: '))
+print(f'A metade de {preco} e {moeda.metade(preco)}')
+print(f'O dobro de {preco} e {moeda.dobro(preco)}')
+print(f'Aumentando {taxa}% de {preco} fica {moeda.aumentar(preco, taxa)}')
+print(f'Diminuindo {taxd}% de {preco} fica {moeda.diminuir(preco, taxd)}')

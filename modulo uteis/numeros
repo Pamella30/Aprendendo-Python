@@ -1,0 +1,7 @@
+import uteis
+
+num = int(input('Digite um numero para ver seu fatorial: '))
+fat = uteis.fatorial(num)
+print(f'O fatorial de {num} e {fat}')
+print(f'O dobro de {num} e {uteis.dobro(num)}')
+print(f'O triplo de {num} e {uteis.triplo(num)}')

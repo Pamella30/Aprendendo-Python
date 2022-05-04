@@ -1,4 +1,4 @@
-# Logica de programacao - Python
+# Python Basico
 - Condicoes (IF - ELIF - ELSE)
 - while
 - for
